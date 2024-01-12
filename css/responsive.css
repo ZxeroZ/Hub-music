@@ -84,7 +84,7 @@
     }
 
     .playcrd {
-        margin: 10vh 0vh;
+        margin: 0vh 0vh;
     }
 
     .playcrd-container {
@@ -95,5 +95,33 @@
         justify-content: center
     }
 
+    .card {
+        margin-top: 5vh;
+    }
+
+    .video-container {
+        align-items: center;
+        flex-direction: column;
+        width: calc(100% - 40px);
+
+    }
+
+    .video-title,
+    .video-left p,
+    .ocdr,
+    .law,
+    .lst {
+        text-align: center;
+
+    }
+
+    .video-top video {
+        margin-top: 5vh;
+    }
+
+    .video-bottom h2, p{
+        text-align: center;
+        margin-top: 0;
+    }
 
 }
