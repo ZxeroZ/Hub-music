@@ -1,0 +1,99 @@
+/* Estilos para pantallas grandes (mayor a 1200px) */
+@media only screen and (min-width: 1200px) {}
+
+
+
+
+
+/* Estilos para pantallas medianas (entre 768px y 1199px) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {}
+
+
+
+
+
+/* Estilos para pantallas pequeñas (menor a 767px) */
+@media only screen and (max-width: 767px) {
+
+    .burger-btn {
+        display: flex;
+        height: 100%;
+        width: 15%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        /* ajusta según sea necesario */
+        left: 0;
+        width: 100%;
+        background-color: #161616;
+        z-index: 122;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav a {
+        margin: 0;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .nav-container {
+        width: calc(100% - 40px);
+    }
+
+    .hero-container {
+        max-width: 1080px;
+        margin: auto;
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        width: calc(100% - 40px);
+        text-align: center;
+
+    }
+
+    .play-spect {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .play {
+        width: 40%;
+    }
+
+    .redes,
+    .spectrogram {
+        display: none;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .playcrd {
+        margin: 10vh 0vh;
+    }
+
+    .playcrd-container {
+        width: calc(100% - 40px);
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+
+}
