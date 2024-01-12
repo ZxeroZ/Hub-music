@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+
+    <div class="redes animate__animated animate__fadeIn">
+        <div class="spoty">
+            <img src="./img/spoti.svg" alt="">
+        </div>
+        <div class="yt">
+            <img src="./img/yt.svg" alt="">
+        </div>
+        <div class="github">
+            <img src="./img/git.svg" alt="">
+        </div>
+    </div>
+
+    <header class="head">
+        <div class="nav-container animate__animated animate__fadeInDown">
+            <div class="logo">
+                <img src="./img/logo.svg" alt="">
+                <a href="">Hub Music</a>
+            </div>
+
+            <button class="burger-btn">&#9776;</button>
+
+            <nav class="nav">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact us</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-intro">
+                <h1 class="wow animate__fadeInLeft">Listen To Music</h1>
+                <p class="wow animate__fadeInRight">Immerse yourself in the Electronic Universe: Explore a
+                    World of Innovative Beats, Energetic Sets and
+                    Emerging Artists. Find your Sound Journey in Our Electronic Music Space</p>
+
+                <div class="play-spect  ">
+                    <button class="play wow animate__fadeIn">Play Demo</button>
+                    <audio id="audioPlayer" src="./music/Alesso-One-Last-Time.mp3" volume="0.5"></audio>
+                    <div class="spectrogram"></div>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img class="wow animate__fadeIn" src="./img/martin_garrix-removebg.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="playcrd wow animate__fadeIn headline">
+        <div class="playcrd-container">
+            <div class="card">
+                <button class="playPauseBtn"><img src="./img/play-s.svg" alt=""></button>
+                <audio class="audioPlayer" src="./music/so_far_away.mp3"></audio>
+                <img class="crd-img" src="./img/martin-g.jpg" alt="">
+                <h1>Martin Garrix</h1>
+                <p>Is a Dutch DJ, He is also the owner and founder of the STMPD RCRDS record.</p>
+            </div>
+
+            <div class="card">
+                <button class="playPauseBtn"><img src="./img/play-s.svg" alt=""></button>
+                <audio class="audioPlayer"
+                    src="./music/David Guetta, Brooks  Loote - Better When Youre Gone (Lyric Video).mp3"></audio>
+                <img class="crd-img" src="./img/david.jpg" alt="">
+                <h1>David Guetta</h1>
+                <p>is a DJ. Currently, he is ranked #1 according to the survey conducted by DJ Magazine</p>
+            </div>
+
+            <div class="card">
+                <button class="playPauseBtn"><img src="./img/play-s.svg" alt=""></button>
+                <audio class="audioPlayer" src="./music/Mike Williams, Jonas Aden - I Hope You Know.mp3"></audio>
+                <img class="crd-img" src="./img/mike.jpg" alt="">
+                <h1>Mike williams</h1>
+                <p>Is a Dutch rapper, DJ and producer mainly focused on Future Bounce.</p>
+            </div>
+            <div class="card">
+                <button class="playPauseBtn"><img src="./img/play-s.svg" alt=""></button>
+                <audio class="audioPlayer" src="./music/Alesso-One-Last-Time.mp3"></audio>
+                <img class="crd-img" src="./img/dj_alesso_zoukout_singapore.jpg" alt="">
+                <h1>Alesso</h1>
+                <p>He's a DJ. He has participated in numerous music festivals, including Tomorrowland.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="video wow animate__fadeInRight headline">
+        <div class="video-container">
+            <div class="video-left">
+                <h1 class="video-title">Video</h1>
+
+                <div class="ocdr">
+                    <h1>Current record label</h1>
+                    <p>Stmpd Rcrds</p>
+                </div>
+                <div class="law">
+                    <h1>Best Song</h1>
+                    <p>Animals 2014</p>
+                </div>
+                <div class="lst">
+                    <h1>Last Song</h1>
+                    <p>Hurricane 2023</p>
+                </div>
+
+            </div>
+            <div class="video-right">
+                <div class="video-top">
+                    <video id="videoPlayer" controls>
+                        <source src="./video/Martin Garrix - Visual Intro Show (Unofficial Intro).mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+                <div class="video-bottom">
+                    <h2>The best DJ</h2>
+                    <p>Martin Garrix is ​​a prominent DJ and music producer originally from the Netherlands. Known for
+                        his global hit "Animals" in 2013, Garrix has become a prominent figure in the electronic music
+                        scene. His influence endures through collaborations with renowned artists and his continued
+                        innovation in music production.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="projects wow animate__fadeInLeft headline" id="projects">
+        <div class="projects-container">
+            <h1>Recent tour and Projects</h1>
+            <div class="contentt">
+                <a href="#projects">Album</a>
+                <a href="#music">Songs</a>
+            </div>
+            <div class="img">
+                <img src="./img/Almbum.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <section class="music wow animate__fadeInRight headline">
+        <div class="music-container" id="music">
+            <h3>Next level Music</h3>
+            <div class="music-top">
+                <div class="card-music">
+                    <img src="./img/Martin_Garrix_-_Animals.png" alt="">
+                    <div class="card-text">
+                        <h2>Animals - Martin Garrix</h2>
+                        <p>It is a single by Dutch DJ and producer Martin Garrix. It was released on June 17, 2013
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-music">
+                    <img src="./img/i-hope.jpg" alt="">
+                    <div class="card-text">
+                        <h2>I Hope you Know - Mike Williams</h2>
+                        <p>It is a single by Dutch DJ and producer Mike Williams. It was released on 2021.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-music">
+                    <img src="./img/bettjer,jpg.jpg" alt="">
+                    <div class="card-text">
+                        <h2>Better When You're Gone - Brooks</h2>
+                        <p>It is a single by Dutch DJ and producer Brooks. It was released on 2019.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-music">
+                    <img src="./img/LyL.jpg" alt="">
+                    <div class="card-text">
+                        <h2>Live your life - R3HAB</h2>
+                        <p>It is a single by Dutch DJ and producer Martin R3HAB. It was released on 2015.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer wow animate__fadeInUp headline">
+        <div class="footer-container">
+            <div class="welcome">
+                <h2>Welcome to Hub Music <br> <span>By Zero</span></h2>
+                <p>&copy; 2024 Hub Music. All rights reserved.</p>
+            </div>
+
+            <div class="content">
+                <h1>Social</h1>
+                <a href="">Github</a>
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+            </div>
+            <div class="content">
+                <h1>Terms</h1>
+                <a href="">About me</a>
+                <a href="">Use of Cookies</a>
+                <a href="">Privacy Policy</a>
+            </div>
+            <div class="content">
+                <h1>Copyright</h1>
+                <p>All images on this website are subject to copyright and may not be used without explicit
+                    authorization</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
