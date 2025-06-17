@@ -1,5 +1,4 @@
-
- @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     padding: 0;
@@ -24,7 +23,7 @@ body{
 
 .nav-container{
     height: 100%;
-    max-width: 1080px; 
+    max-width: 1080px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -152,7 +151,7 @@ body{
     width: calc(18*7px); /* Ancho del espectro */
     overflow: hidden; /* Oculta cualquier cosa que se salga de las dimensiones */
   }
-  
+
   .central-line {
     position: absolute;
     top: 50%; /* La mitad de la altura del espectro */
@@ -161,7 +160,7 @@ body{
     height: 1px; /* Grosor de la línea central */
     background-color: transparent; /* La hacemos transparente para que no se vea */
   }
-  
+
   .bar {
     flex: 1;
     margin: 0 1px;
@@ -170,8 +169,8 @@ body{
     animation: wave 0.2s infinite alternate; /* Animación para el movimiento */
     border-radius: 5px; /* Bordes redondeados */
   }
-  
-  
+
+
   @keyframes wave {
     0% { transform: scaleY(1); }
     100% { transform: scaleY(0.5); }
@@ -183,7 +182,7 @@ body{
     width: 60;
     align-items: center;
   }
-  
+
 /* =========================================================================
 =================================================
 ========================================================================= */
@@ -546,3 +545,149 @@ body{
     cursor: pointer;
 }
 
+/* =========================================================================
+================================= Artists Page =============================
+========================================================================= */
+
+.artists-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.artists-container {
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.artists-container h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.artist-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.artist-card {
+    background-color: #282434;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 250px; /* Same as .card */
+    text-align: center;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: translateY(-10px);
+}
+
+.artist-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-bottom: 3px solid #3a4bb6; /* Accent color border */
+}
+
+.artist-card h2 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.artist-card p {
+    font-size: 0.9em;
+    color: #ccc;
+    padding: 0 15px;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+/* =========================================================================
+================================== Albums Page ==============================
+========================================================================= */
+
+.albums-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.albums-container {
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.albums-container h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.album-list-container {
+    display: flex;
+    flex-direction: column; /* Stack albums vertically */
+    gap: 30px; /* Space between album entries */
+}
+
+.album-entry {
+    background-color: #1e1a29; /* Slightly different background for albums */
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex; /* For side-by-side image and details */
+    align-items: center; /* Vertically align items in the middle */
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.album-entry:hover {
+    transform: scale(1.02); /* Subtle zoom effect on hover */
+}
+
+.album-entry img {
+    width: 180px; /* Fixed width for album covers */
+    height: 180px; /* Fixed height for album covers */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px; /* Space between image and text */
+    border: 2px solid #3a4bb6;
+}
+
+.album-details {
+    text-align: left;
+    flex-grow: 1; /* Allows details to take up remaining space */
+}
+
+.album-details h2 {
+    font-size: 1.8em;
+    color: #fff;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.album-details h3 {
+    font-size: 1.2em;
+    color: #a066e6; /* Artist name in accent color */
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.album-details .track-list {
+    font-size: 0.95em;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.album-details .track-list strong {
+    color: #fff;
+}
